@@ -30,8 +30,8 @@ pipeline{
                 rtMavenDeployer(
                     id: 'deployer',
                     serverId: '123456789@artifactory',
-                    releaseRepo: 'FirstArtifactQA',
-                    snapshotRepo: 'FirstArtifactQA'
+                    releaseRepo: 'firstartifactqa',
+                    snapshotRepo: 'firstartifactqa'
                 )
                 rtMavenRun(
                     pom: 'pom.xml',
