@@ -28,20 +28,20 @@ pipeline{
         stage("Upload to Artifactory"){
             steps{
                 
-                rtMavenDeployer{
+                rtMavenDeployer(
                     id: 'deployer',
                     serverId: '123456789@artifactory',
                     releaseRepo: 'firstartifactqa',
                     snapshotRepo: 'firstartifactqa'
-                }
-                rtMavenRun{
+                )
+                rtMavenRun(
                     pom: 'pom.xml',
                     goals: 'clean install',
                     deployerId: 'deployer',
-                        }
-                rtPublishBuildInfo{
+                        )
+                rtPublishBuildInfo(
                     serverId: '123456789@artifactory',
-                        }
+                        )
             }
         }
     }
