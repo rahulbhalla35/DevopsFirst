@@ -28,7 +28,6 @@ pipeline{
         stage("Upload to Artifactory"){
             steps{
                 rtMavenDeployer(
-                    sh "mvn deploy"
                     id: 'deployer',
                     serverId: '123456789@artifactory',
                     releaseRepo: 'firstartifactqa',
