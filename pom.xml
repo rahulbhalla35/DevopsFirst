@@ -186,12 +186,12 @@
 	<distributionManagement>
     <repository>
         <id>central</id>
-        <name>Rahul3149680-01-releases</name>
+        <name>libs-release</name>
         <url>http://localhost:8081/artifactory/firstartifactqa</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>Rahul3149680-01-snapshots</name>
+        <name>libs-snapshot</name>
         <url>http://localhost:8081/artifactory/firstartifactqa</url>
     </snapshotRepository>
 </distributionManagement>
