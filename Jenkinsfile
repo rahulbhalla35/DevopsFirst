@@ -30,19 +30,8 @@ pipeline{
                 rtPublishBuildInfo(
                     serverId: '123456789@artifactory',
                         )
+
             }
         }
-        /*
-        stage('Build Image'){
-            steps{
-                sh "docker build -t myfirstimage:${BUILD_NUMBER} ."
-            }
-        }
-        
-        stage('Docker Deployment'){
-            steps{
-                sh "docker run --name myfirstcontainer -d -p 9050:9000 myfisrtimage:${BUILD_NUMBER}"
-            }
-        }*/
     }
 }
