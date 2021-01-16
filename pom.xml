@@ -272,6 +272,12 @@
                 </configuration>
             </plugin>
         </plugins>
+		<testResources>
+			<testResource>
+				<directory>src/main/webapp</directory>
+			</testResource>
+		</testResources>
+		<finalName>devopssampleapplication</finalName>
     </build>
     <repositories>
         <repository>
@@ -293,10 +299,5 @@
             <url>https://jcenter.bintray.com</url>
         </pluginRepository>
     </pluginRepositories>
-	<testResources>
-			<testResource>
-				<directory>src/main/webapp</directory>
-			</testResource>
-		</testResources>
-		<finalName>devopssampleapplication</finalName>
+	
 </project>
