@@ -33,6 +33,7 @@ pipeline{
                     serverId: '123456789@artifactory',
                     releaseRepo: 'firstartifactqa',
                     snapshotRepo: 'firstartifactqa'
+                    
                 )
                 rtMavenRun(
                     pom: 'pom.xml',
