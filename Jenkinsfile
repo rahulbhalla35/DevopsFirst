@@ -28,7 +28,9 @@ pipeline{
         stage("Upload to Artifactory"){
             steps{
                 sh 'mvn deploy'
-                
+                rtPublishBuildInfo(
+                    serverId: '123456789@artifactory',
+                        )
             }
         }
     }
