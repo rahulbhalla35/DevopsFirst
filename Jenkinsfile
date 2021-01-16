@@ -32,7 +32,7 @@ pipeline{
                         )
             }
         }
-        
+        /*
         stage('Build Image'){
             steps{
                 sh "docker build -t myfirstimage:${BUILD_NUMBER} ."
@@ -43,6 +43,6 @@ pipeline{
             steps{
                 sh "docker run --name myfirstcontainer -d -p 9050:9000 myfisrtimage:${BUILD_NUMBER}"
             }
-        }
+        }*/
     }
 }
