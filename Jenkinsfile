@@ -43,7 +43,7 @@ pipeline{
         
         stage('Docker Deployment'){
             steps{
-                sh "docker run --name myfirstcontainer -d -p 9050:8080 myfisrtimage:${BUILD_NUMBER}"
+                sh "docker run -d -p 9050:8080 myfisrtimage:${BUILD_NUMBER}"
             }
         }
     }
